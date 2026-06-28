@@ -59,7 +59,7 @@ export interface NavGroup {
   items: NavMainItem[];
 }
 
-export const sidebarItems: NavGroup[] = [
+/*export const sidebarItems: NavGroup[] = [
   {
     id: 1,
     label: "Dashboards",
@@ -214,6 +214,189 @@ export const sidebarItems: NavGroup[] = [
         icon: SquareArrowUpRight,
         badge: "soon",
         disabled: true,
+      },
+    ],
+  },
+];*/
+export const sidebarItems: NavGroup = [
+  {
+    id: 1,
+    label: "Dashboards & Analytics",
+    items: [
+      {
+        id: "overview",
+        title: "Overview",
+        url: "/dashboard/overview",
+      },
+      {
+        id: "analytics",
+        title: "Financial Analytics",
+        url: "/dashboard/analytics",
+      },
+    ],
+  },
+  {
+    id: 2,
+    label: "User & Account Management",
+    items: [
+      {
+        id: "users",
+        title: "Users Management",
+        url: "/dashboard/users",
+        subItems: [
+          {
+            id: "new",
+            title: "Add New User",
+            url: "/dashboard/users/new",
+          },
+        ],
+      },
+      {
+        id: "cardholders",
+        title: "Cardholders",
+        url: "/dashboard/users/cardholders",
+      },
+      {
+        id: "merchants",
+        title: "Merchants",
+        url: "/dashboard/users/merchants",
+      },
+      {
+        id: "agents",
+        title: "Agents & Partners",
+        url: "/dashboard/users/agents",
+      },
+      {
+        id: "staff",
+        title: "Staff",
+        url: "/dashboard/users/Staff",
+      },
+    ],
+  },
+  {
+    id: 3,
+    label: "Core Banking & Ledger",
+    items: [
+      {
+        id: "wallets",
+        title: "Wallets & Accounts",
+        url: "/dashboard/wallets",
+      },
+      {
+        id: "transactions",
+        title: "Transactions Ledger",
+        url: "/dashboard/wallets/transactions",
+      },
+      {
+        id: "settlements",
+        title: "Settlements & Clearing",
+        url: "/dashboard/wallets/settlements",
+      },
+      {
+        id: "depoist",
+        title: "Depoist Requsets",
+        url: "/dashboard/wallets/depoists",
+      },
+    ],
+  },
+  {
+    id: 4,
+    label: "Issuing & Acquiring",
+    items: [
+      {
+        id: "cards",
+        title: "Card Management",
+        subItems: [
+          {
+            id: "link",
+            title: "Link With Wallet",
+            url: "/dashboard/cards/link",
+          },
+          {
+            id: "issue",
+            title: "Iusse New Card",
+            url: "/dashboard/cards/iusse",
+          },
+          {
+            id: "stock",
+            title: "Cards Stock",
+            url: "/dashboard/cards/stock",
+          },
+        ],
+      },
+      {
+        id: "card_transactions",
+        title: "Card Transactions",
+        url: "/dashboard/cards/transactions",
+      },
+    ],
+  },
+  {
+    id: 5,
+    label: "Risk, Compliance & Fraud",
+    items: [
+      {
+        id: "compliance",
+        title: "AML / Compliance",
+        url: "/dashboard/compliance",
+      },
+      {
+        id: "risks",
+        title: "Fraud & Risk Radar",
+        url: "/dashboard/risks",
+      },
+      {
+        id: "block",
+        title: "Block Accounts",
+        url: "/dashboard/block",
+      },
+    ],
+  },
+  {
+    id: 6,
+    label: "Operations & Support",
+    items: [
+      {
+        id: "support",
+        title: "Support Tickets",
+        url: "/dashboard/support",
+      },
+      {
+        id: "disputes",
+        title: "Disputes & Chargebacks",
+        url: "/dashboard/disputes",
+      },
+    ],
+  },
+  {
+    id: 7,
+    label: "System Settings & Access Control",
+    items: [
+      {
+        id: "roles_permissions",
+        title: "Roles & Permissions",
+        subItems: [
+          {
+            id: "roles",
+            title: "Roles",
+            url: "/dashboard/roles",
+          },
+          {
+            id: "permissions",
+            title: "Permissions",
+            url: "/dashboard/permissions",
+          },
+        ],
+      },
+      {
+        id: "fees",
+        title: "Fee & Commission",
+        url: "/dashboard/fees",
+      },
+      {
+        id: "settings",
+        title: "Genreal Settings",
+        url: "/dashboard/settings",
       },
     ],
   },
