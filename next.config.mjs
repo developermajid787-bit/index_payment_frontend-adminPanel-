@@ -13,7 +13,7 @@ const nextConfig = {
       },
     ];
   },
-  allowedDevOrigins: ["https://3000-index-payment-index-paym-63gacrcpkx.app.codeanywhere.com"]
+  allowedDevOrigins: ["nyksxd-3000.csb.app"],
 };
 
 export default nextConfig;
