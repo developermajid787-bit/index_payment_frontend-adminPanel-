@@ -114,7 +114,6 @@ export function Step1({ form }: Step1Props) {
               <FieldLabel>National ID Photo</FieldLabel>
 
               <div
-                tabIndex={0}
                 aria-label="Upload National ID image"
                 onDragOver={onDragOver}
                 onDragLeave={onDragLeave}
